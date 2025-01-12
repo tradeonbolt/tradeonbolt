@@ -1,0 +1,46 @@
+version: "3.9"
+
+services:
+  py39:
+    container_name: OrnixAI-py39
+    build:
+      dockerfile: Dockerfile
+      target: py39
+    volumes:
+      - .:/repository/
+    environment:
+      - ORNIXAI_API_KEY=
+      - ORNIXAI_API_BASE=
+
+  py310:
+    container_name: OrnixAI-py310
+    build:
+      dockerfile: Dockerfile
+      target: py310
+    volumes:
+      - .:/repository/
+    environment:
+      - ORNIXAI_API_KEY=
+      - ORNIXAI_API_BASE=
+
+  py311:
+    container_name: OrnixAI-py311
+    build:
+      dockerfile: Dockerfile
+      target: py311
+    volumes:
+      - .:/repository/
+    environment:
+      - ORNIXAI_API_KEY=
+      - ORNIXAI_API_BASE=
+
+  py312:
+    container_name: OrnixAI-py312
+    build:
+      dockerfile: Dockerfile
+      target: py312
+    volumes:
+      - .:/repository/
+    environment:
+      - ORNIXAI_API_KEY=
+      - ORNIXAI_API_BASE=
